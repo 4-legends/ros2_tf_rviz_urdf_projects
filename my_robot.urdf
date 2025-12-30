@@ -8,9 +8,7 @@
         <color rgba="0.5 0.5 0.5 1"/>
     </material>
 
-    <link name="base_footprint">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </link>
+    <link name="base_footprint"/>
     <link name="base_link">
         <visual>
             <geometry>
@@ -51,7 +49,7 @@
         </visual>
     </link>
 
-    <joint name="base_to_footprint_joint" type="fixed">
+    <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
         <origin xyz="0 0 0.1" rpy="0 0 0"/>
@@ -74,7 +72,7 @@
     <joint name="base_caster_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="caster_wheel_link"/>
-        <origin xyz="0.2 0 -0.025" rpy="0 0 0"/>
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
     </joint>
 
 </robot>
