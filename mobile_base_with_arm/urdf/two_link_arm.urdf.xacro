@@ -1,0 +1,4 @@
+<?xml version ="1.0"?>
+<robot name="two_link_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="two_link_arm_base.urdf.xacro" />
+</robot>
